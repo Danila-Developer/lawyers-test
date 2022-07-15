@@ -1,0 +1,409 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Montserrat', sans-serif;
+
+}
+
+html {
+   font-size: 20px;
+}
+
+body {
+   background-color: #E6E6E6;
+
+}
+
+.container {
+   max-width: 1000px;
+   margin: 0 auto;
+   padding: 0px 10px;
+}
+
+header {
+   box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.4);
+}
+
+.header-top {
+   height: 3rem;
+   background-color: #7395AE;
+}
+
+.header-top-wrapper {
+   padding-top: 10px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.logo {
+   background-color: #557A95;
+   border-radius: 5px;
+   padding: 0.25rem 0.5rem;
+   color: white;
+   font-size: 1rem;
+}
+
+.header-top-wrapper a {
+   text-decoration: none;
+}
+
+.search {
+   display: flex;
+   cursor: pointer;
+
+
+}
+
+.search input {
+   background-color: #7395AE;
+   border: 1.5px solid #5D5C61;
+   color: white;
+   padding: 5px;
+   height: 1.5rem;
+   outline: none;
+
+}
+
+.search input::-webkit-input-placeholder {
+   color: #CECECE;
+   font-size: 0.8rem;
+}
+
+
+.search-button {
+   background-color: #5D5C61;
+   height: 1.5rem;
+   color: white;
+   padding: 0px 10px;
+   line-height: 1.5rem;
+   font-size: 0.8rem;
+
+}
+
+nav {
+   background-color: #7395AE;
+   height: 1.8rem
+}
+
+.nav-menu {
+   display: flex;
+   list-style-type: none;
+   justify-content: center;
+}
+
+.nav-menu li {
+   position: relative;
+   margin-right: 50px;
+   transition: all .4s;
+}
+
+.nav-menu li:hover:after {
+   transform: scale(1);
+}
+
+.nav-menu li::after {
+   content: '';
+   display: block;
+   position: absolute;
+   height: 1px;
+   background-color: white;
+   width: 100%;
+   transition: all .4s;
+   transform: scale(0);
+}
+
+
+.nav-menu li a {
+   text-decoration: none;
+   color: white;
+}
+
+.bottom-block {
+   height: 4px;
+   background-color: #557A95;
+}
+
+main {
+   height: 100%;
+}
+
+
+footer {
+   margin-top: 1rem;
+   height: 60px;
+   line-height: 60px;
+   color: white;
+   background-color: #7395AE;
+}
+
+.person-cart {
+   margin-top: 1.5rem;
+   background-color: white;
+   width: 100%;
+   border-radius: 10px;
+   transition: all 0.3s;
+   position: relative;
+}
+
+.cart-separator {
+   width: 96%;
+   background-color: #E4E4E4;
+   height: 0.3vh;
+   margin: 0 auto;
+}
+
+.person-top {
+   /* padding: 1% 0; */
+   margin: 0 2%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.person-name {
+   font-size: 0.8rem;
+   line-height: 2rem;
+   font-weight: 500;
+}
+
+.person-rating {
+   line-height: 2rem;
+   font-size: 1.4rem;
+   color: gold;
+}
+
+@media (max-width: 736px) {
+   html {
+      font-size: 12px;
+   }
+}
+
+
+.person-type-toggle-button {
+   font-size: 0.8rem;
+   display: flex;
+   cursor: pointer;
+}
+
+
+.left-button {
+   border: 0.07rem solid #5D5C61;
+   color: #5D5C61;
+   padding: 0.25rem 0.8rem;
+   border-top-left-radius: 5px;
+   border-bottom-left-radius: 5px;
+   width: 5.5rem;
+   text-align: center;
+}
+
+
+
+.right-button {
+   border: 0.07rem solid #5D5C61;
+   color: #5D5C61;
+   padding: 0.25rem 0.8rem;
+   border-top-right-radius: 5px;
+   border-bottom-right-radius: 5px;
+   width: 5.5rem;
+   text-align: center;
+}
+
+.person-type-button-active {
+   background-color: #5D5C61;
+   color: white;
+}
+
+.best-person {
+   margin-top: 20px;
+}
+
+.best-person .person-cart {
+   border: 1.5px solid #7395AE;
+   box-shadow: 0rem 0rem 1rem 1rem rgba(115, 149, 174, 0.1);
+   ;
+}
+
+.best-person-top {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.best-person-title {
+   color: #5D5C61;
+}
+
+.best-person-title span {
+   display: inline-block;
+   font-size: 1.6rem;
+   font-weight: 500;
+   margin-bottom: 5px;
+   color: black;
+}
+
+.person-bottom {
+   transition: all 0.3s ease;
+   display: none;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0% 2%;
+}
+
+.person-photo {
+   width: 30%;
+   display: flex;
+   justify-content: center;
+}
+
+.person-photo img {
+   height: 7rem;
+}
+
+.person-table {
+   font-size: 0.8rem;
+}
+
+.person-table td {
+
+   padding: 0.2rem 0.6rem;
+
+}
+
+.person-table tr:nth-child(2n+1) {
+   background-color: #F1F1F1;
+}
+
+.person-buttons {
+   font-size: 0.8rem;
+   width: 25%;
+
+}
+
+.recommend-block {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 5px;
+}
+
+.rate-button {
+   border: 1.5px solid #5D5C61;
+   height: 1.3rem;
+   width: 1.3rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.rate-button-active {
+   background-color: #5D5C61;
+}
+
+.rate-button-active svg {
+   fill: white;
+}
+
+.rate-icon {
+   fill: #5D5C61;
+   height: 0.9rem;
+}
+
+.recommend-block span {
+   line-height: 1.3rem;
+}
+
+.to-cart-button {
+   cursor: pointer;
+   margin-top: 1rem;
+   border: 1.5px solid #5D5C61;
+   border-radius: 5px;
+   padding: 0.1rem 0;
+   text-align: center;
+}
+
+.to-cart-button:hover {
+   background-color: #5D5C61;
+   color: white;
+}
+
+.to-cart-a {
+   text-decoration: none;
+   color: #5D5C61;
+}
+
+.common-rating-title {
+   margin-top: 40px;
+   text-align: center;
+   background-color: #CECECE;
+   line-height: 2rem;
+}
+
+.cart-bottom-active {
+   display: flex;
+
+}
+
+.small-cart {
+   font-size: 0.8rem;
+   line-height: 1.4rem;
+   position: relative;
+}
+
+.open-button {
+   position: absolute;
+   top: 100%;
+   display: flex;
+   margin-top: -1px;
+   width: 100%;
+   justify-content: center;
+   height: 2rem;
+}
+
+.open-button:hover svg {
+   opacity: 100%;
+}
+
+.open-button svg {
+   cursor: pointer;
+   opacity: 0;
+   transition: all 0.3s ease;
+}
+
+
+.load-button-wrapper{
+   margin-top: 2rem;
+   display: flex;
+   justify-content: center;
+}
+
+.load-button{
+   color: #5D5C61;
+   cursor: pointer;
+   border: 1.5px solid #5D5C61;
+   border-radius: 5px;
+   padding: 0.4rem 1rem ;
+   font-size: 0.8rem;
+}
+
+.loader-wrapper{
+   margin-top: 20px;
+   display: flex;
+   justify-content: center;
+}
+
+.loader{
+   animation-name: loader-rotate;
+   animation-duration: 0.7s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+
+@keyframes loader-rotate {
+   0%{
+      transform: rotate(0deg);
+   }
+   100%{
+      transform: rotate(360deg);
+   }
+}
